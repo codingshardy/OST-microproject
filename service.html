@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: white;
+            color: white;
+        }
+        .navbar {
+            background-color: black;
+            padding: 15px;
+            text-align: center;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #00FFFF;
+            color: black;
+        }
+        header h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+        .services-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 50px 10%;
+        }
+        .service-card {
+            background-color: white;
+            border-radius: 8px;
+            width: 300px;
+            height: 350px;
+            padding: 20px;
+            text-align: center;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            color: white;
+            position: relative;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+        .service-card:hover {
+            transform: scale(1.05);
+        }
+        .service-card .overlay {
+            background-color: rgba(0, 0, 0, 0.6);
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 8px;
+        }
+        .service-card .content {
+            position: relative;
+            z-index: 1;
+            padding: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+        .service-card h2 {
+            font-size: 24px;
+            margin: 0;
+        }
+        .service-card p {
+            font-size: 16px;
+            margin: 10px 0 0;
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            width: 100%;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="AboutUs.html">About Us</a><a href="service.html">Services</a>
+        <a href="contact us.html">Contact</a>
+        <a href="Event Registration..HTML">Event Registration</a>
+        <a href="ourwork.html">Work Gallery</a>
+        <a href="Legal Terms and Policies..html">Legal Terms and Policies</a>
+        <a href="FAQs.html">FAQ's</a>
+        
+    </div>
+
+    <header>
+        <h1>Our Event Management Services</h1>
+    </header>
+
+    <section class="services-section">
+        <div class="service-card" style="background-image: url(https://tinyurl.com/27erwzm4);"
+        onclick="window.location.href='eventplanning.html';"> 
+            <div class="overlay"></div>
+            <div class="content">
+                <h2><a href="eventplanning.html">Event Planning</a></h2>
+                <p>From weddings to corporate events, our expert planners will help you create a seamless event experience.</p>
+            </div>
+        </div>
+
+        <div class="service-card" style="background-image: url(https://tinyurl.com/28sjtfpx);"
+        onclick="window.location.href='catering.html';"> 
+            <div class="overlay"></div>
+            <div class="content">
+                <h2><a href="catering.html">Catering</a></h2>
+                <p>Delicious and customized catering options for all types of events, ensuring your guests are satisfied.</p>
+            </div>
+        </div>
+
+        <div class="service-card" style="background-image: url(https://tinyurl.com/282ywsyk);" 
+        onclick="window.location.href='venue.html';">
+            <div class="overlay"></div>
+            <div class="content">
+                <h2><a href="venue.html">Venue Selection</a></h2>
+                <p>We help you choose the perfect venue based on your event type, size, and preferences.</p>
+            </div>
+        </div>
+
+        <div class="service-card" style="background-image: url(https://tinyurl.com/27rqczld);"
+        onclick="window.location.href='entertainment.html';">
+            <div class="overlay"></div>
+            <div class="content">
+                <h2><a href="entertainment.html">Entertainment</a></h2>
+                <p>From DJs to live bands, we bring the best entertainment to keep your guests engaged all night long.</p>
+            </div>
+        </div>
+
+        <div class="service-card" style="background-image: url(https://tinyurl.com/2ybzsfvk);"
+        onclick="window.location.href='decoration.html';">
+           
+            <div class="overlay"></div>
+            <div class="content">
+                <h2><a href="decoration.html">Event Decorations</a></h2>
+                <p>Creative and stunning decor that transforms your venue and sets the perfect atmosphere for your event.</p>
+            </div>
+        </div>
+
+        <div class="service-card" style="background-image: url(https://tinyurl.com/29kq4kyc);" 
+        onclick="window.location.href='photovideo.html';">
+            <div class="overlay"></div>
+            <div class="content">
+                <h2><a href="photovideo.html">Photography & Videography</a></h2>
+                <p>Capture the beautiful moments of your event with professional photography and videography services.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Event Management Company. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

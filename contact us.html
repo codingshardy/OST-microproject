@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: black;
+        }
+        .header-container {
+            background: black;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+        }
+        h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+        .content-container {
+            background: #00ffff;
+            padding: 40px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+            text-align: left;
+        }
+        .contact-info div {
+            width: 48%;
+        }
+        .form-container {
+            margin-top: 30px;
+            text-align: left;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        form button {
+            background-color: #3498db;
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color:  #3498db;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-container">
+        <h1>Contact Us</h1>
+    <header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="contact us.html">Contact</a></li>
+                <li><a href="Event Registration..HTML">Event Registration</a></li>
+                <li><a href="ourwork.html">Work Gallery</a></li>
+                <li><a href="Legal Terms and Policies..html">Legal Terms and Policies</a></li>
+                <li><a href="FAQs.html">FAQ's</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    </div>
+    
+    <div class="content-container">
+        <div class="container">
+            <header>
+                <h2>We would love to hear from you!</h2>
+            </header>
+    
+            <div class="contact-info">
+                <div>
+                    <h3>Shaarav Apte</h3>
+                    <p>mobile no: 9850456213</p>
+                    <p>email id: xyz@gmail.com</p>
+                    <h3>Anisha Todkar</h3>
+                    <p>mobile no: 2354890133</p>
+                    <p>email id: abc@gmail.com</p>
+                    <h3>Neel Arjune</h3>
+                    <p>mobile no: 8875430913</p>
+                    <p>email id: klm@gmail.com</p>
+                </div>
+            </div>
+    
+            <div class="form-container">
+                <h3>Send Us a Message</h3>
+                <form action="response.html" method="post">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+    
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+    
+                    <a href="response.html"><button type="submit">Submit</button></a>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Decoration Service Options</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: cyan;
+            color: black;
+        }
+        .header {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: black;
+            color: white;
+            font-size: 36px;
+            font-weight: bold;
+        }
+        .container {
+            padding: 40px 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            max-width: 800px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            color: black;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label, select, input {
+            display: block;
+            margin: 10px 0;
+            color: black;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Decoration Service Options</div>
+    <div class="container">
+        <form action="response.html" method="post">
+            <label for="theme">Preferred Decoration Theme:</label>
+            <select id="theme" name="theme" required>
+                <option value="">Select an option</option>
+                <option value="Elegant">Elegant</option>
+                <option value="Rustic">Rustic</option>
+                <option value="Vintage">Vintage</option>
+                <option value="Modern">Modern</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label>Decoration Elements:</label>
+            <input type="checkbox" name="decor_elements" value="Floral Arrangements"> Floral Arrangements<br>
+            <input type="checkbox" name="decor_elements" value="Balloon Decorations"> Balloon Decorations<br>
+            <input type="checkbox" name="decor_elements" value="LED Lighting"> LED Lighting<br>
+            <input type="checkbox" name="decor_elements" value="Table Centerpieces"> Table Centerpieces<br>
+
+            <label>Preferred Color Scheme:</label>
+            <input type="radio" name="color_scheme" value="Pastel" required> Pastel<br>
+            <input type="radio" name="color_scheme" value="Bold"> Bold<br>
+            <input type="radio" name="color_scheme" value="Neutral"> Neutral<br>
+
+            <label for="guest_count">Estimated Guest Count:</label>
+            <input type="number" id="guest_count" name="guest_count" min="1" required>
+
+            <a href="response.html"><button type="submit">Submit</button></a>
+        </form>
+    </div>
+</body>
+</html>

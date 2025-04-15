@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventify - Event Registration</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: rgb(252, 250, 250);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background-color: cyan;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid black;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+            color: black;
+        }
+
+        /* Navigation */
+        nav {
+            text-align: center;
+            padding: 10px;
+            background-color: rgb(15, 8, 8);
+            border-bottom: 2px solid cyan;
+        }
+
+        nav a {
+            color: rgb(249, 246, 246);
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: cyan;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgb(250, 248, 248);
+            border: 2px solid cyan;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: rgb(13, 13, 13);
+            border-bottom: 2px solid cyan;
+            padding-bottom: 10px;
+        }
+
+        p {
+            color: rgb(245, 244, 244);
+        }
+
+        /* Form Styles */
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin: 10px 0 5px;
+            font-weight: bold;
+            color: rgb(14, 12, 12);
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"] {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid cyan;
+            border-radius: 5px;
+            background-color: rgb(237, 228, 228);
+            color: rgb(17, 14, 14);
+        }
+
+        input[type="submit"] {
+            background-color: cyan;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #00cccc;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgb(6, 3, 3); /* Changed to black */
+            border-top: 2px solid rgb(144, 171, 171); /* Changed to cyan */
+            margin-top: 20px;
+            color: rgb(7, 4, 4); /* Changed to white */
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Eventify</h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="AboutUs.html">About Us</a><a href="service.html">Services</a>
+        <a href="contact us.html">Contact</a>
+        <a href="Event Registration..HTML">Event Registration</a>
+        <a href="ourwork.html">Work Gallery</a>
+        <a href="Legal Terms and Policies..html">Legal Terms and Policies</a>
+        <a href="FAQs.html">FAQ's</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h2>Event Registration</h2>
+        
+        <!-- Registration Form -->
+        <form action="response.html" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <a herf="response.html"><input type="submit" value="Register"></a>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Eventify | All Rights Reserved</p>
+    </footer>
+</body>
+</html>

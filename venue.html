@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Venue Selection Options</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: cyan;
+            color: black;
+        }
+        .header {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: black;
+            color: white;
+            font-size: 36px;
+            font-weight: bold;
+        }
+        .container {
+            padding: 40px 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            max-width: 800px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            color: black;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label, select, input {
+            display: block;
+            margin: 10px 0;
+            color: black;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Venue Selection Options</div>
+    <div class="container">
+        <form action="response.html" method="post">
+            <label for="venue_type">Preferred Venue Type:</label>
+            <select id="venue_type" name="venue_type" required>
+                <option value="">Select an option</option>
+                <option value="Indoor">Indoor</option>
+                <option value="Outdoor">Outdoor</option>
+                <option value="Banquet Hall">Banquet Hall</option>
+                <option value="Garden">Garden</option>
+                <option value="Beachfront">Beachfront</option>
+            </select>
+
+            <label>Additional Venue Features:</label>
+            <input type="checkbox" name="features" value="Stage Setup"> Stage Setup<br>
+            <input type="checkbox" name="features" value="Dance Floor"> Dance Floor<br>
+            <input type="checkbox" name="features" value="Projector & Screen"> Projector & Screen<br>
+            <input type="checkbox" name="features" value="Outdoor Seating"> Outdoor Seating<br>
+
+            <label>Capacity Requirement:</label>
+            <input type="radio" name="capacity" value="Small (0-50)" required> Small (0-50 guests)<br>
+            <input type="radio" name="capacity" value="Medium (50-200)"> Medium (50-200 guests)<br>
+            <input type="radio" name="capacity" value="Large (200+)"> Large (200+ guests)<br>
+
+            <label for="guest_count">Estimated Guest Count:</label>
+            <input type="number" id="guest_count" name="guest_count" min="1" required>
+
+            <a href="response.html"><button type="submit">Submit</button></a>
+        </form>
+    </div>
+</body>
+</html>

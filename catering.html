@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Catering Service Options</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: cyan;
+            color: black;
+        }
+        .header {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: black;
+            color: white;
+            font-size: 36px;
+            font-weight: bold;
+        }
+        .container {
+            padding: 40px 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            max-width: 800px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            color: black;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label, select, input {
+            display: block;
+            margin: 10px 0;
+            color: black;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Catering Service Options</div>
+    <div class="container">
+        <form action="response.html" method="post">
+            <label for="cuisine">Preferred Cuisine:</label>
+            <select id="cuisine" name="cuisine" required>
+                <option value="">Select an option</option>
+                <option value="Italian">Italian</option>
+                <option value="Indian">Indian</option>
+                <option value="Chinese">Chinese</option>
+                <option value="Mexican">Mexican</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label>Dietary Restrictions:</label>
+            <input type="checkbox" name="diet" value="Vegetarian"> Vegetarian<br>
+            <input type="checkbox" name="diet" value="Vegan"> Vegan<br>
+            <input type="checkbox" name="diet" value="Gluten-Free"> Gluten-Free<br>
+            <input type="checkbox" name="diet" value="None"> No Restrictions<br>
+
+            <label>Preferred Service Style:</label>
+            <input type="radio" name="service_style" value="Buffet" required> Buffet<br>
+            <input type="radio" name="service_style" value="Plated"> Plated Meal<br>
+            <input type="radio" name="service_style" value="Live Cooking"> Live Cooking Stations<br>
+
+            <label for="guest_count">Estimated Guest Count:</label>
+            <input type="number" id="guest_count" name="guest_count" min="1" required>
+
+            <a href="response.html"><button type="submit">Submit</button></a>
+        </form>
+    </div>
+</body>
+</html>

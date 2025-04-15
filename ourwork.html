@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background: cyan;
+            color: black;
+        }
+        header {
+            background: black;
+            color: white;
+            padding: 20px;
+        }
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 10px;
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        } 
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+       
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Our Work</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="contact us.html">Contact</a></li>
+                <li><a href="Event Registration..HTML">Event Registration</a></li>
+                <li><a href="ourwork.html">Work Gallery</a></li>
+                <li><a href="Legal Terms and Policies..html">Legal Terms and Policies</a></li>
+                <li><a href="FAQs.html">FAQ's</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <div class="gallery-container">
+        <div class="gallery-item"><img src="https://soletsparty.co.uk/wp-content/uploads/2018/03/iStock-911111816.jpg" alt="Event 1"></div>
+        <div class="gallery-item"><img src="https://tse4.mm.bing.net/th?id=OIP.wjPPz2NS_9WEG7vj9tsfDQHaE6&pid=Api&P=0&h=180" alt="Event 2"></div>
+        <div class="gallery-item"><img src="https://tse2.mm.bing.net/th?id=OIP.SVFpXkDg5IDWM0zy-W4_lwHaE7&pid=Api&P=0&h=180" alt="Event 3"></div>
+        <div class="gallery-item"><img src="https://tse3.mm.bing.net/th?id=OIP.F8P2k2YFxiTMrTsQRywhBwHaFj&pid=Api&P=0&h=180" alt="Event 4"></div>
+        <div class="gallery-item"><img src="https://koala.sh/api/image/v2-5svkh-qadv9.jpg?width=1344&height=768&dream" alt="Event 5"></div>
+        <div class="gallery-item"><img src="https://m.media-amazon.com/images/I/71MZeRgsjpL._AC_UF1000,1000_QL80_.jpg" alt="Event 6"></div>
+    </div>
+</body>
+</html>
